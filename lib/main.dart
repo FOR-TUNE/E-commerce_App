@@ -1,6 +1,6 @@
 import 'package:ecommerce_app/constants.dart';
 import 'package:ecommerce_app/routes.dart';
-import 'package:ecommerce_app/screens/splash/splash_screen.dart';
+import 'package:ecommerce_app/screens/loading/loading_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Fort-Shop',
       theme: ThemeData(
-          scaffoldBackgroundColor: Colors.white,
+          scaffoldBackgroundColor: lightprimaryColor,
           textTheme: const TextTheme(
               bodyText1: TextStyle(color: textColor),
               bodyText2: TextStyle(color: textColor)),
@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
           fontFamily: "Oswald"),
       // home: const SplashScreen(),
       // here we use routeName so it's easier to remember.
-      initialRoute: SplashScreen.routeName,
+      initialRoute: LoadingScreen.routeName,
       routes: routes,
     );
   }
