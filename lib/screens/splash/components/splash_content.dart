@@ -28,8 +28,8 @@ class SplashContent extends StatelessWidget {
         const Spacer(flex: 1),
         Image.asset(
           image,
-          height: getProportionateScreenHeight(365),
-          width: getProportionateScreenWidth(335),
+          height: getProportionateScreenHeight(335),
+          width: getProportionateScreenWidth(305),
         )
       ],
     );

@@ -1,7 +1,11 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:ecommerce_app/constants.dart';
 import 'package:ecommerce_app/routes.dart';
 import 'package:ecommerce_app/screens/loading/loading_screen.dart';
+import 'package:ecommerce_app/theme.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,13 +20,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Fort-Shop',
-      theme: ThemeData(
-          scaffoldBackgroundColor: lightprimaryColor,
-          textTheme: const TextTheme(
-              bodyText1: TextStyle(color: textColor),
-              bodyText2: TextStyle(color: textColor)),
-          visualDensity: VisualDensity.adaptivePlatformDensity,
-          fontFamily: "Oswald"),
+      theme: theme(),
       // home: const SplashScreen(),
       // here we use routeName so it's easier to remember.
       initialRoute: LoadingScreen.routeName,
@@ -30,3 +28,5 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+

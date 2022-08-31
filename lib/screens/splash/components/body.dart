@@ -1,6 +1,7 @@
 // ignore_for_file: deprecated_member_use
 
 import 'package:ecommerce_app/constants.dart';
+import 'package:ecommerce_app/screens/sign_in/signin_screen.dart';
 //This is best practice.
 import '../../../components/default_button.dart';
 import 'package:ecommerce_app/screens/splash/components/splash_content.dart';
@@ -67,7 +68,9 @@ class _BodyState extends State<Body> {
                     const Spacer(),
                     DefaultButton(
                       text: 'Continue',
-                      press: () {},
+                      press: () {
+                        Navigator.pushNamed(context, SignInScreen.routeName);
+                      },
                     ),
                     const Spacer(),
                   ],
