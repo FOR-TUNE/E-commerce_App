@@ -10,3 +10,11 @@ const primaryGradientColor = LinearGradient(
     colors: [Color(0xFFD1C4E9), Color(0xFF311B92)]);
 
 const animationduration = Duration(milliseconds: 500);
+
+// Form Error
+final RegExp emailValidatorRegExp = RegExp(r"^[a-zA-Z0-9,]+@[a-zA-Z0-9]+\.[a-zA-Z]+");
+const String emailNullError = "Please enter your email address";
+const String invalidEmailError = "Please enter a valid email";
+const String passNullError = "Please enter your password";
+const String shortPassError = "Password is too short";
+const String passMatchError = "Password's does not match";

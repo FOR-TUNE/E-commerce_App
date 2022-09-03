@@ -9,8 +9,25 @@ ThemeData theme() {
       scaffoldBackgroundColor: lightprimaryColor,
       appBarTheme: appBarTheme(),
       textTheme: textTheme(),
+      inputDecorationTheme: inputDecorationTheme(),
       visualDensity: VisualDensity.adaptivePlatformDensity,
       fontFamily: "Oswald");
+}
+
+InputDecorationTheme inputDecorationTheme() {
+  OutlineInputBorder outlineInputBorder = OutlineInputBorder(
+      borderRadius: BorderRadius.circular(28),
+      borderSide: const BorderSide(
+        color: textColor,
+      ),
+      gapPadding: 10);
+  return InputDecorationTheme(
+      // we cannot define the floatinglabelBehaviour in the theme.
+      // floatingLabelBehavior: FloatingLabelBehavior.always,
+      contentPadding: const EdgeInsets.symmetric(horizontal: 35, vertical: 20),
+      enabledBorder: outlineInputBorder,
+      focusedBorder: outlineInputBorder,
+      border: outlineInputBorder);
 }
 
 TextTheme textTheme() {
@@ -20,11 +37,10 @@ TextTheme textTheme() {
 }
 
 AppBarTheme appBarTheme() {
-  return AppBarTheme(
-      color: Colors.white,
+  return const AppBarTheme(
+      color: lightprimaryColor,
       elevation: 0,
-      iconTheme: const IconThemeData(color: Colors.white),
+      iconTheme: IconThemeData(color: textColor),
       systemOverlayStyle: SystemUiOverlayStyle.light,
-      textTheme:
-          TextTheme(headline6: TextStyle(color: Colors.deepPurple[100])));
+      textTheme: TextTheme(headline6: TextStyle(color: textColor)));
 }
