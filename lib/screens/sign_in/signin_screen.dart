@@ -27,8 +27,8 @@ class SignInScreen extends StatelessWidget {
         );
       }),
       centerTitle: true,
-      title: const Text('Sign In',
-          style: TextStyle(color: textColor, fontSize: 17)),
+      title: const Text("Sign In",
+          style: TextStyle(color: textColor, fontSize: 20)),
     );
   }
 }
