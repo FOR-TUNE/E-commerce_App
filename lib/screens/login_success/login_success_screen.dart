@@ -1,6 +1,5 @@
 import 'package:ecommerce_app/screens/login_success/components/body.dart';
 import 'package:flutter/material.dart';
-
 import '../../constants.dart';
 import '../../sizeconfig.dart';
 
@@ -13,9 +12,10 @@ class LoginSuccessScreen extends StatelessWidget {
     SizeConfig().init(context);
     return Scaffold(
       appBar: AppBar(
+        leading: const SizedBox(),
         centerTitle: true,
         title: const Text("Login Success",
-            style: TextStyle(color: textColor, fontSize: 20)),
+            style: TextStyle(color: textColor, fontSize: 23)),
       ),
       body: const Body(),
     );

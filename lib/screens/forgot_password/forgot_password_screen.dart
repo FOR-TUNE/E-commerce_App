@@ -13,25 +13,14 @@ class ForgotPasswordScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     return Scaffold(
-      appBar: buildAppBar(),
+      appBar: AppBar(
+        centerTitle: true,
+        title: const Text("Forgot Password",
+            style: TextStyle(color: textColor, fontSize: 23)),
+      ),
+      // appBar: buildAppBar(),
       body: const Body(),
     );
   }
 }
 
-AppBar buildAppBar() {
-  return AppBar(
-    leading: Builder(builder: (BuildContext context) {
-      return IconButton(
-        icon: const Icon(Icons.arrow_back_ios),
-        onPressed: () {
-          Navigator.restorablePopAndPushNamed(context, SignInScreen.routeName);
-        },
-        tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
-      );
-    }),
-    centerTitle: true,
-    title: const Text("Forgot Password",
-        style: TextStyle(color: textColor, fontSize: 20)),
-  );
-}

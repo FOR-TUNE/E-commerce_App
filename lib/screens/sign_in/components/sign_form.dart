@@ -46,8 +46,10 @@ class _SignInFormState extends State<SignInForm> {
                 Text("Remember Me"),
                 Spacer(),
                 GestureDetector(
-                  onTap: () => Navigator.pushNamed(
-                      context, ForgotPasswordScreen.routeName),
+                  onTap: () {
+                    Navigator.pushNamed(
+                        context, ForgotPasswordScreen.routeName);
+                  },
                   child: Text(
                     "Forgot Password.",
                     style: TextStyle(decoration: TextDecoration.underline),
@@ -89,10 +91,12 @@ class _SignInFormState extends State<SignInForm> {
           setState(() {
             errors.add(passNullError);
           });
+          return "";
         } else if (value.length < 8 && !errors.contains(shortPassError)) {
           setState(() {
             errors.add(shortPassError);
           });
+          return "";
         }
         return null;
       },
@@ -128,11 +132,13 @@ class _SignInFormState extends State<SignInForm> {
           setState(() {
             errors.add(emailNullError);
           });
+          return "";
         } else if (!emailValidatorRegExp.hasMatch(value) &&
             !errors.contains(invalidEmailError)) {
           setState(() {
             errors.add(invalidEmailError);
           });
+          return "";
         }
         return null;
       },

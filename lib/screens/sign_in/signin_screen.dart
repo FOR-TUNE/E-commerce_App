@@ -19,16 +19,10 @@ class SignInScreen extends StatelessWidget {
 
   AppBar buildAppBar() {
     return AppBar(
-      leading: Builder(builder: (BuildContext context) {
-        return IconButton(
-          icon: const Icon(Icons.arrow_back_ios),
-          onPressed: () {},
-          tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
-        );
-      }),
+      leading: const SizedBox(),
       centerTitle: true,
       title: const Text("Sign In",
-          style: TextStyle(color: textColor, fontSize: 20)),
+          style: TextStyle(color: textColor, fontSize: 23)),
     );
   }
 }
