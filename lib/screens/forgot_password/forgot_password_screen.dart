@@ -1,5 +1,4 @@
 import 'package:ecommerce_app/screens/forgot_password/components/body.dart';
-import 'package:ecommerce_app/screens/sign_in/signin_screen.dart';
 import 'package:ecommerce_app/sizeconfig.dart';
 import 'package:flutter/material.dart';
 

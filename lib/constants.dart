@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/sizeconfig.dart';
 import 'package:flutter/material.dart';
 
 const primaryColor = Color(0xFF311B92);
@@ -11,10 +12,20 @@ const primaryGradientColor = LinearGradient(
 
 const animationduration = Duration(milliseconds: 500);
 
+final headingStyle = TextStyle(
+    color: textColor,
+    fontSize: getProportionateScreenHeight(28),
+    fontWeight: FontWeight.bold,
+    height: 1.5);
+
 // Form Error
-final RegExp emailValidatorRegExp = RegExp(r"^[a-zA-Z0-9,]+@[a-zA-Z0-9]+\.[a-zA-Z]+");
+final RegExp emailValidatorRegExp =
+    RegExp(r"^[a-zA-Z0-9,]+@[a-zA-Z0-9]+\.[a-zA-Z]+");
 const String emailNullError = "Please enter your email address";
 const String invalidEmailError = "Please enter a valid email";
 const String passNullError = "Please enter your password";
 const String shortPassError = "Password is too short";
 const String passMatchError = "Password's does not match";
+const String nameNullError = "Please enter your name";
+const String phoneNumberNullError = "Please enter your phone number";
+const String addressNullError = "Please enter your address";
