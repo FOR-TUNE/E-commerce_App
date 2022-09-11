@@ -1,8 +1,8 @@
+import 'package:ecommerce_app/screens/home/home_screen.dart';
 import 'package:flutter/material.dart';
 import '../../../components/default_button.dart';
 import '../../../constants.dart';
 import '../../../sizeconfig.dart';
-
 
 class OTPForm extends StatefulWidget {
   const OTPForm({Key? key}) : super(key: key);
@@ -108,7 +108,11 @@ class _OTPFormState extends State<OTPForm> {
           ],
         ),
         SizedBox(height: SizeConfig.screenHeight * 0.15),
-        DefaultButton(text: "Continue", press: () {})
+        DefaultButton(
+            text: "Continue",
+            press: () {
+              Navigator.pushNamed(context, HomeScreen.routeName);
+            })
       ],
     ));
   }
