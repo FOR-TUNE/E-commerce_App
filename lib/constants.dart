@@ -29,3 +29,16 @@ const String passMatchError = "Password's does not match";
 const String nameNullError = "Please enter your name";
 const String phoneNumberNullError = "Please enter your phone number";
 const String addressNullError = "Please enter your address";
+
+final otpInputDecoration = InputDecoration(
+    contentPadding:
+        EdgeInsets.symmetric(vertical: getProportionateScreenHeight(15)),
+    enabledBorder: outlineInputBorder(),
+    focusedBorder: outlineInputBorder(),
+    border: outlineInputBorder());
+
+OutlineInputBorder outlineInputBorder() {
+  return OutlineInputBorder(
+      borderRadius: BorderRadius.circular(17),
+      borderSide: const BorderSide(color: textColor));
+}
