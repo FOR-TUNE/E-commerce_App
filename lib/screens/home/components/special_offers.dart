@@ -61,14 +61,14 @@ class SpecialCardOffer extends StatelessWidget {
         padding: EdgeInsets.only(left: getProportionateScreenWidth(20)),
         child: SizedBox(
             width: getProportionateScreenWidth(245),
-            height: getProportionateScreenHeight(100),
+            height: getProportionateScreenHeight(120),
             child: ClipRRect(
               borderRadius: BorderRadius.circular(20),
               child: Stack(children: [
                 Image.asset(
                   image,
                   width: getProportionateScreenWidth(245),
-                  height: getProportionateScreenHeight(100),
+                  height: getProportionateScreenHeight(120),
                   fit: BoxFit.fill,
                 ),
                 Container(
