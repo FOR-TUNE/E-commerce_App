@@ -5,6 +5,10 @@ const primaryColor = Color(0xFF311B92);
 const lightprimaryColor = Color(0xFFD1C4E9);
 const secondaryColor = Color(0xFF37474F);
 const textColor = Color(0xDD000000);
+const favPrimaryColor = Color(0xFFC62828);
+const notFavPrimaryColor = Colors.grey;
+const favSecondaryColor = Color(0xFFFF9A9A);
+const notFavSecondaryColor = Color(0xFFF5F6F9);
 const primaryGradientColor = LinearGradient(
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,

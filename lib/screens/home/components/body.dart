@@ -7,7 +7,6 @@ import 'home_header.dart';
 import 'popular_products.dart';
 import 'special_offers.dart';
 
-
 class Body extends StatelessWidget {
   const Body({Key? key}) : super(key: key);
 

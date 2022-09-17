@@ -14,7 +14,7 @@ class SearchField extends StatelessWidget {
       // height: 50,
       height: getProportionateScreenHeight(46),
       decoration: BoxDecoration(
-          color: secondaryColor.withOpacity(0.2),
+          color: primaryColor.withOpacity(0.1),
           borderRadius: BorderRadius.circular(15)),
       child: TextField(
         onChanged: (value) {
