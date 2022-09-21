@@ -23,6 +23,8 @@ class TopRoundedContainer extends StatelessWidget {
           borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(40),
             topRight: Radius.circular(40),
+            bottomLeft: Radius.circular(40),
+            bottomRight: Radius.circular(40),
           )),
       child: child,
     );
