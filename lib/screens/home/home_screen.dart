@@ -1,3 +1,5 @@
+import 'package:ecommerce_app/components/custom_nav_bar.dart';
+import 'package:ecommerce_app/enums.dart';
 import 'package:flutter/material.dart';
 import '../../sizeconfig.dart';
 import 'components/body.dart';
@@ -10,7 +12,8 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     return const Scaffold(
-      body: Body()
+      body: Body(),
+      bottomNavigationBar: CustomBottomNavBar(selectedMenu: MenuState.home),
     );
   }
 }

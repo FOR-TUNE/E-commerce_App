@@ -1,4 +1,4 @@
-// ignore_for_file: file_names
+// ignore_for_file: file_names, unused_import
 import 'package:flutter/material.dart';
 import 'Product.dart';
 
@@ -11,7 +11,7 @@ class Cart {
 
 // Demo data for the Cart
 List<Cart> demoCarts = [
-  Cart(product: demoProducts[0], numOfItems: 3),
   Cart(product: demoProducts[1], numOfItems: 2),
-  Cart(product: demoProducts[2], numOfItems: 1)
+  Cart(product: demoProducts[2], numOfItems: 3),
+  Cart(product: demoProducts[0], numOfItems: 1)
 ];

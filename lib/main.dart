@@ -1,7 +1,7 @@
-// ignore_for_file: deprecated_member_use
-
+// ignore_for_file: deprecated_member_use, unused_import
 import 'package:ecommerce_app/routes.dart';
 import 'package:ecommerce_app/screens/loading/loading_screen.dart';
+import 'package:ecommerce_app/screens/profile/profile_screen.dart';
 import 'package:ecommerce_app/theme.dart';
 import 'package:flutter/material.dart';
 
