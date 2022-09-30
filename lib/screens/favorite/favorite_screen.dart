@@ -3,6 +3,7 @@ import '../../components/custom_nav_bar.dart';
 import '../../constants.dart';
 import '../../enums.dart';
 import '../../sizeconfig.dart';
+import 'components/body.dart';
 
 class FavouriteScreen extends StatelessWidget {
   static String routeName = '/favourite';
@@ -22,6 +23,7 @@ class FavouriteScreen extends StatelessWidget {
                   color: textColor, fontSize: getProportionateScreenHeight(20)),
             )
           ])),
+          body: const Body(),
       bottomNavigationBar:
           const CustomBottomNavBar(selectedMenu: MenuState.favorite),
     );

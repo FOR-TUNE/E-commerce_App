@@ -3,6 +3,7 @@ import '../../components/custom_nav_bar.dart';
 import '../../constants.dart';
 import '../../enums.dart';
 import '../../sizeconfig.dart';
+import 'components/body.dart';
 
 class MessageScreen extends StatelessWidget {
   static String routeName = '/chats';
@@ -13,6 +14,7 @@ class MessageScreen extends StatelessWidget {
     SizeConfig().init(context);
     return Scaffold(
       appBar: buildAppBar(),
+      body: const Body(),
       bottomNavigationBar:
           const CustomBottomNavBar(selectedMenu: MenuState.message),
     );
